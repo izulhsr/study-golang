@@ -36,4 +36,11 @@ func main() {
 
 	sliceDays1 := append(sliceDays, "Libur Baru")
 	fmt.Println("Day", sliceDays1)
+
+	newSlice := make([]string, 2, 5)
+	newSlice[0] = "Jhon"
+	newSlice[1] = "Jhon"
+
+	fmt.Println(newSlice)
+
 }
