@@ -1,18 +1,22 @@
 package helper
 
 import (
+	"fmt"
 	"testing"
 )
 
-func TestHelloWorld(t *testing.T) {
+func TestHelloWorldJhon(t *testing.T) {
 	resault := HelloWorld("Jhon")
 	if resault != "Hello Jhon" {
-		panic("Resault is not 'Hello Jhon'")
+		t.Error("Resault must be Hello Jhon")
 	}
+	fmt.Println("Test Done")
 }
 func TestHelloWorldSmith(t *testing.T) {
 	resault := HelloWorld("Smith")
 	if resault != "Hello Smith" {
-		panic("Resault is not 'Hello Smith'")
+		t.Fatal("Resault must be Hello Smith")
 	}
+	fmt.Println("Test Done")
+
 }
